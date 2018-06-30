@@ -16,7 +16,7 @@ public class JIRAIssueOperations_Payload {
 					  "        	\"key\": \"AUT\"\r\n" + 
 					  "        },\r\n" + 
 					  "        \"summary\": \"Created issue through automated API request\",\r\n" + 
-					  "        \"description\": \"Automated issue in JIRA to perform actions on comments\",\r\n" + 
+					  "        \"description\": \"Automated issue in JIRA\",\r\n" + 
 					  "        \"issuetype\": {\r\n" + 
 				      "            \"name\": \"Bug\"\r\n" + 
 					  "        }\r\n" + 
@@ -25,9 +25,9 @@ public class JIRAIssueOperations_Payload {
 		return body;
 	}
 	
-	public String comment1Body() {
+	public String commentBody() {
 		String body = "{\r\n" + 
-					  "    \"body\": \"Created first comment\",\r\n" + 
+					  "    \"body\": \"Created new comment\",\r\n" + 
 					  "    \"visibility\": {\r\n" + 
 					  "        \"type\": \"role\",\r\n" + 
 					  "        \"value\": \"Administrators\"\r\n" + 
@@ -36,31 +36,9 @@ public class JIRAIssueOperations_Payload {
 		return body;
 	}
 	
-	public String comment2Body() {
+	public String updatecommentBody() {
 		String body = "{\r\n" + 
-					  "    \"body\": \"Created second comment\",\r\n" + 
-					  "    \"visibility\": {\r\n" + 
-					  "        \"type\": \"role\",\r\n" + 
-					  "        \"value\": \"Administrators\"\r\n" + 
-					  "    }\r\n" + 
-					  "}";
-		return body;
-	}
-	
-	public String comment3Body() {
-		String body = "{\r\n" + 
-					  "    \"body\": \"Created third comment\",\r\n" + 
-					  "    \"visibility\": {\r\n" + 
-					  "        \"type\": \"role\",\r\n" + 
-					  "        \"value\": \"Administrators\"\r\n" + 
-					  "    }\r\n" + 
-					  "}";
-		return body;
-	}
-	
-	public String updatecomment3Body() {
-		String body = "{\r\n" + 
-				      "    \"body\": \"Updated the third comment\",\r\n" + 
+				      "    \"body\": \"Updated the comment\",\r\n" + 
 					  "    \"visibility\": {\r\n" + 
 				      "        \"type\": \"role\",\r\n" + 
 					  "        \"value\": \"Administrators\"\r\n" + 

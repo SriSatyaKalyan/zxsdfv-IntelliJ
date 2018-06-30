@@ -12,8 +12,8 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import jira.JIRACommentOperations_Payload;
 import jira.JIRAIssueOperations_Payload;
+import jira.JIRACommentOperations_Payload;
 import jira.JIRABasics;
 import junit.framework.Assert;
 import resources.ConvertRawFiles;
@@ -37,7 +37,7 @@ public class JIRACommentOperations {
 	public int comment_count;
 	
 	JIRABasics basics = new JIRABasics();
-	JIRAIssueOperations_Payload jira = new JIRAIssueOperations_Payload();
+	JIRACommentOperations_Payload jira = new JIRACommentOperations_Payload();
 	
 	@BeforeTest
 	public void getData() throws IOException {
