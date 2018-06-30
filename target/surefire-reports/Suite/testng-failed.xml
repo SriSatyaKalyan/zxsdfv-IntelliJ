@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="MavenFramework.Demo3CentralizingData">
+        <methods>
+          <include name="getData"/>
+        </methods>
+      </class> <!-- MavenFramework.Demo3CentralizingData -->
+      <class name="MavenFramework.Demo7Twitter">
+        <methods>
+          <include name="removeCreatedTweet"/>
+          <include name="findLatestTweet"/>
+          <include name="createTweet"/>
+        </methods>
+      </class> <!-- MavenFramework.Demo7Twitter -->
+      <class name="MavenFramework.Demo5JIRAapi">
+        <methods>
+          <include name="getData"/>
+        </methods>
+      </class> <!-- MavenFramework.Demo5JIRAapi -->
+      <class name="MavenFramework.Demo6JIRACommenting">
+        <methods>
+          <include name="getData"/>
+        </methods>
+      </class> <!-- MavenFramework.Demo6JIRACommenting -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

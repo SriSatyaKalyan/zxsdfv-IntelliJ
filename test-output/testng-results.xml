@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-06-30T02:56:27Z" name="Default suite" finished-at="2018-06-30T02:56:39Z" duration-ms="11957">
+    <groups>
+    </groups>
+    <test started-at="2018-06-30T02:56:27Z" name="Default test" finished-at="2018-06-30T02:56:39Z" duration-ms="11957">
+      <class name="jira_api.JIRA1">
+        <test-method is-config="true" signature="getData()[pri:0, instance:jira_api.JIRA1@7cf6a5f9]" started-at="2018-06-29T20:56:27Z" name="getData" finished-at="2018-06-29T20:56:27Z" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method signature="a_createSession()[pri:0, instance:jira_api.JIRA1@7cf6a5f9]" started-at="2018-06-29T20:56:27Z" name="a_createSession" finished-at="2018-06-29T20:56:32Z" duration-ms="5049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a_createSession -->
+        <test-method signature="b_createSessionIssue()[pri:0, instance:jira_api.JIRA1@7cf6a5f9]" started-at="2018-06-29T20:56:32Z" name="b_createSessionIssue" finished-at="2018-06-29T20:56:38Z" duration-ms="5486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b_createSessionIssue -->
+        <test-method signature="c_addComment()[pri:0, instance:jira_api.JIRA1@7cf6a5f9]" started-at="2018-06-29T20:56:38Z" name="c_addComment" finished-at="2018-06-29T20:56:39Z" duration-ms="1098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c_addComment -->
+        <test-method signature="d_updateComment()[pri:0, instance:jira_api.JIRA1@7cf6a5f9]" started-at="2018-06-29T20:56:39Z" name="d_updateComment" finished-at="2018-06-29T20:56:39Z" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- d_updateComment -->
+      </class> <!-- jira_api.JIRA1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
