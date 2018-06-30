@@ -2,9 +2,10 @@
 
 <html>
   <head>
+  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -48,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\satya\AppData\Local\Temp\testng-eclipse--173981327\testng-customsuite.xml</span>
+                    <span>C:\Users\satya\AppData\Local\Temp\testng-eclipse--405880180\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -242,14 +243,14 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\satya\AppData\Local\Temp\testng-eclipse--173981327\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\satya\AppData\Local\Temp\testng-eclipse--405880180\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot;&gt;
-  &lt;test name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;jira_api.JIRACommentOperations&quot;/&gt;
     &lt;/classes&gt;
@@ -295,48 +296,48 @@ data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'a_createSession')
 data.setCell(0, 2, 'jira_api.JIRACommentOperations')
-data.setCell(0, 3, 2182);
+data.setCell(0, 3, 2549);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'b_createSessionIssue')
 data.setCell(1, 2, 'jira_api.JIRACommentOperations')
-data.setCell(1, 3, 310);
+data.setCell(1, 3, 578);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'c_addComment1')
 data.setCell(2, 2, 'jira_api.JIRACommentOperations')
-data.setCell(2, 3, 225);
+data.setCell(2, 3, 560);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'd_updateComment')
+data.setCell(3, 1, 'c_addComment3')
 data.setCell(3, 2, 'jira_api.JIRACommentOperations')
-data.setCell(3, 3, 211);
+data.setCell(3, 3, 452);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'c_addComment3')
+data.setCell(4, 1, 'c_addComment2')
 data.setCell(4, 2, 'jira_api.JIRACommentOperations')
-data.setCell(4, 3, 169);
+data.setCell(4, 3, 445);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'c_addComment2')
+data.setCell(5, 1, 'd_updateComment')
 data.setCell(5, 2, 'jira_api.JIRACommentOperations')
-data.setCell(5, 3, 163);
+data.setCell(5, 3, 381);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'f_deleteComment2')
 data.setCell(6, 2, 'jira_api.JIRACommentOperations')
-data.setCell(6, 3, 153);
+data.setCell(6, 3, 204);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'e_getComments')
 data.setCell(7, 2, 'jira_api.JIRACommentOperations')
-data.setCell(7, 3, 73);
+data.setCell(7, 3, 103);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'h_getCommentsAgain')
+data.setCell(8, 1, 'g_getComment')
 data.setCell(8, 2, 'jira_api.JIRACommentOperations')
-data.setCell(8, 3, 48);
+data.setCell(8, 3, 44);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'g_getComment')
+data.setCell(9, 1, 'h_getCommentsAgain')
 data.setCell(9, 2, 'jira_api.JIRACommentOperations')
-data.setCell(9, 3, 45);
+data.setCell(9, 3, 40);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -369,43 +370,43 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">a_createSession</span>
-                <span class="method-start">29 ms</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">b_createSessionIssue</span>
-                <span class="method-start">2214 ms</span>
+                <span class="method-start">2593 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">c_addComment1</span>
-                <span class="method-start">2530 ms</span>
+                <span class="method-start">3173 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">c_addComment2</span>
-                <span class="method-start">2757 ms</span>
+                <span class="method-start">3735 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">c_addComment3</span>
-                <span class="method-start">2921 ms</span>
+                <span class="method-start">4190 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">d_updateComment</span>
-                <span class="method-start">3093 ms</span>
+                <span class="method-start">4644 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">e_getComments</span>
-                <span class="method-start">3311 ms</span>
+                <span class="method-start">5030 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">f_deleteComment2</span>
-                <span class="method-start">3390 ms</span>
+                <span class="method-start">5139 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">g_getComment</span>
-                <span class="method-start">3544 ms</span>
+                <span class="method-start">5344 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">h_getCommentsAgain</span>
-                <span class="method-start">3594 ms</span>
+                <span class="method-start">5391 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

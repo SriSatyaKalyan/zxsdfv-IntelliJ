@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-06-30T17:35:11Z" name="Default suite" finished-at="2018-06-30T17:35:15Z" duration-ms="3657">
+  <suite started-at="2018-06-30T19:04:34Z" name="Default suite" finished-at="2018-06-30T19:04:39Z" duration-ms="5438">
     <groups>
     </groups>
-    <test started-at="2018-06-30T17:35:11Z" name="Default test" finished-at="2018-06-30T17:35:15Z" duration-ms="3657">
+    <test started-at="2018-06-30T19:04:34Z" name="Default test" finished-at="2018-06-30T19:04:39Z" duration-ms="5438">
       <class name="jira_api.JIRACommentOperations">
-        <test-method is-config="true" signature="getData()[pri:0, instance:jira_api.JIRACommentOperations@35f26e72]" started-at="2018-06-30T11:35:11Z" name="getData" finished-at="2018-06-30T11:35:12Z" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="getData()[pri:0, instance:jira_api.JIRACommentOperations@c1bd0be]" started-at="2018-06-30T19:04:34Z" name="getData" finished-at="2018-06-30T19:04:34Z" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getData -->
-        <test-method signature="a_createSession()[pri:0, instance:jira_api.JIRACommentOperations@35f26e72]" started-at="2018-06-30T11:35:12Z" name="a_createSession" finished-at="2018-06-30T11:35:14Z" duration-ms="2182" status="PASS">
+        <test-method signature="a_createSession()[pri:0, instance:jira_api.JIRACommentOperations@c1bd0be]" started-at="2018-06-30T19:04:34Z" name="a_createSession" finished-at="2018-06-30T19:04:36Z" duration-ms="2549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- a_createSession -->
-        <test-method signature="b_createSessionIssue()[pri:0, instance:jira_api.JIRACommentOperations@35f26e72]" started-at="2018-06-30T11:35:14Z" name="b_createSessionIssue" finished-at="2018-06-30T11:35:14Z" duration-ms="310" status="PASS">
+        <test-method signature="b_createSessionIssue()[pri:0, instance:jira_api.JIRACommentOperations@c1bd0be]" started-at="2018-06-30T19:04:36Z" name="b_createSessionIssue" finished-at="2018-06-30T19:04:37Z" duration-ms="578" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- b_createSessionIssue -->
-        <test-method signature="c_addComment1()[pri:0, instance:jira_api.JIRACommentOperations@35f26e72]" started-at="2018-06-30T11:35:14Z" name="c_addComment1" finished-at="2018-06-30T11:35:14Z" duration-ms="225" status="PASS">
+        <test-method signature="c_addComment1()[pri:0, instance:jira_api.JIRACommentOperations@c1bd0be]" started-at="2018-06-30T19:04:37Z" name="c_addComment1" finished-at="2018-06-30T19:04:38Z" duration-ms="560" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- c_addComment1 -->
-        <test-method signature="c_addComment2()[pri:0, instance:jira_api.JIRACommentOperations@35f26e72]" started-at="2018-06-30T11:35:14Z" name="c_addComment2" finished-at="2018-06-30T11:35:14Z" duration-ms="163" status="PASS">
+        <test-method signature="c_addComment2()[pri:0, instance:jira_api.JIRACommentOperations@c1bd0be]" started-at="2018-06-30T19:04:38Z" name="c_addComment2" finished-at="2018-06-30T19:04:38Z" duration-ms="445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- c_addComment2 -->
-        <test-method signature="c_addComment3()[pri:0, instance:jira_api.JIRACommentOperations@35f26e72]" started-at="2018-06-30T11:35:14Z" name="c_addComment3" finished-at="2018-06-30T11:35:15Z" duration-ms="169" status="PASS">
+        <test-method signature="c_addComment3()[pri:0, instance:jira_api.JIRACommentOperations@c1bd0be]" started-at="2018-06-30T19:04:38Z" name="c_addComment3" finished-at="2018-06-30T19:04:39Z" duration-ms="452" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- c_addComment3 -->
-        <test-method signature="d_updateComment()[pri:0, instance:jira_api.JIRACommentOperations@35f26e72]" started-at="2018-06-30T11:35:15Z" name="d_updateComment" finished-at="2018-06-30T11:35:15Z" duration-ms="211" status="PASS">
+        <test-method signature="d_updateComment()[pri:0, instance:jira_api.JIRACommentOperations@c1bd0be]" started-at="2018-06-30T19:04:39Z" name="d_updateComment" finished-at="2018-06-30T19:04:39Z" duration-ms="381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- d_updateComment -->
-        <test-method signature="e_getComments()[pri:0, instance:jira_api.JIRACommentOperations@35f26e72]" started-at="2018-06-30T11:35:15Z" name="e_getComments" finished-at="2018-06-30T11:35:15Z" duration-ms="73" status="PASS">
+        <test-method signature="e_getComments()[pri:0, instance:jira_api.JIRACommentOperations@c1bd0be]" started-at="2018-06-30T19:04:39Z" name="e_getComments" finished-at="2018-06-30T19:04:39Z" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- e_getComments -->
-        <test-method signature="f_deleteComment2()[pri:0, instance:jira_api.JIRACommentOperations@35f26e72]" started-at="2018-06-30T11:35:15Z" name="f_deleteComment2" finished-at="2018-06-30T11:35:15Z" duration-ms="153" status="PASS">
+        <test-method signature="f_deleteComment2()[pri:0, instance:jira_api.JIRACommentOperations@c1bd0be]" started-at="2018-06-30T19:04:39Z" name="f_deleteComment2" finished-at="2018-06-30T19:04:39Z" duration-ms="204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f_deleteComment2 -->
-        <test-method signature="g_getComment()[pri:0, instance:jira_api.JIRACommentOperations@35f26e72]" started-at="2018-06-30T11:35:15Z" name="g_getComment" finished-at="2018-06-30T11:35:15Z" duration-ms="45" status="PASS">
+        <test-method signature="g_getComment()[pri:0, instance:jira_api.JIRACommentOperations@c1bd0be]" started-at="2018-06-30T19:04:39Z" name="g_getComment" finished-at="2018-06-30T19:04:39Z" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- g_getComment -->
-        <test-method signature="h_getCommentsAgain()[pri:0, instance:jira_api.JIRACommentOperations@35f26e72]" started-at="2018-06-30T11:35:15Z" name="h_getCommentsAgain" finished-at="2018-06-30T11:35:15Z" duration-ms="48" status="PASS">
+        <test-method signature="h_getCommentsAgain()[pri:0, instance:jira_api.JIRACommentOperations@c1bd0be]" started-at="2018-06-30T19:04:39Z" name="h_getCommentsAgain" finished-at="2018-06-30T19:04:39Z" duration-ms="40" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- h_getCommentsAgain -->

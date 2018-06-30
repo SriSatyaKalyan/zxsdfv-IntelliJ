@@ -5,15 +5,15 @@
   <test thread-count="5" name="JIRAAPI_Tests">
     <classes>
       <!-- <class name="MavenFramework.Twitter1"/> -->
-      <class name="MavenFramework.JIRACommentOperations"/>
-      <class name="MavenFramework.JIRAIssueOperations"/>
+      <class name="Framework57.JIRACommentOperations"/>
+      <class name="Framework57.JIRAIssueOperations"/>
     </classes>
   </test> <!-- Test -->
 	
   <test thread-count="5" name="TwitterAPI_Tests">
     <classes>
       <!-- <class name="MavenFramework.Twitter1"/> -->
-      <class name="MavenFramework.TwitterTweetOperations"/>
+      <class name="Framework57.TwitterTweetOperations"/>
     </classes>
   </test> <!-- Test -->
   
