@@ -17,7 +17,8 @@ import jira.JIRABasics;
 import resources.ConvertRawFiles;
 
 public class JIRAIssueOperations {
-
+	//This 
+	
 	public static Logger log = LogManager.getLogger(JIRAIssueOperations.class.getName());
 	
 	public Properties prop;
