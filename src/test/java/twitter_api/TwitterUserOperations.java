@@ -43,57 +43,20 @@ public class TwitterUserOperations {
 	}
 	
 	@Test
-	public void findLatestTweet() {
+	public void findFollowersList() {
 		log.info("TwitterUserOperations.findLatestTweet");
 		
-		RestAssured.baseURI =  basics.twitterBaseURI();
+		RestAssured.baseURI =  basics.twitterBaseURIUser();
 		Response response = 
 		given().auth().oauth(consumer_key, consumer_secret, access_token, access_token_secret).
 		queryParam("count", "1").when().
-		get("/user_timeline.json").then().extract().response();
+		get("/list.json").then().extract().response();
 		
 		JsonPath json = (ConvertRawFiles.rawtoJSON(response));
-		String text = json.getString("text");
+		String text = json.getString("users.followers_count");
+//		System.out.println(text);
+//				getString("text");
 		System.out.println("The text is " + text);
 	}
 	
-	@Test
-	public void createTweet() {
-		log.info("TwitterTweetOperations.createTweet");
-		
-		RestAssured.baseURI = basics.twitterBaseURI();
-		Response response = 
-		given().auth().oauth(consumer_key, consumer_secret, access_token, access_token_secret).
-		//Keep on changing the tweet text as API does not allow the same tweet to be posted on and on forever
-		queryParam("status", "This is an automated tweeter programmed using Java").when().
-		post("/update.json").
-		then().statusCode(200).
-		extract().response();
-		
-		JsonPath json = (ConvertRawFiles.rawtoJSON(response));
-		String created_at = json.getString("created_at");
-		tweet_id   = json.getString("id");
-		log.info("The tweet is created at " + created_at);
-	}
-	
-	@Test
-	public void removeCreatedTweet() {
-		log.info("TwitterTweetOperations.removeCreatedTweet");
-		
-		RestAssured.baseURI = basics.twitterBaseURI();
-		Response response = 
-		given().auth().oauth(consumer_key, consumer_secret, access_token, access_token_secret).
-		when().post("/destroy/" + tweet_id +".json").
-		then().statusCode(200).
-		extract().response();
-		
-		JsonPath json = (ConvertRawFiles.rawtoJSON(response));
-		String truncated = json.getString("truncated");
-//		log.info(truncated);
-		if (truncated.equalsIgnoreCase("false")) {
-			Assert.assertTrue(true);
-		}else {
-			Assert.assertFalse(true);
-		}
-	}
 }

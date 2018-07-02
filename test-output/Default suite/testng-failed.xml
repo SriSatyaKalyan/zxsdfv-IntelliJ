@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="jira_api.JIRA2">
+      <class name="twitter_api.TwitterUserOperations">
         <methods>
+          <include name="findFollowersList"/>
           <include name="getData"/>
-          <include name="e_getComments"/>
-          <include name="g_getComment"/>
-          <include name="h_getComments"/>
         </methods>
-      </class> <!-- jira_api.JIRA2 -->
+      </class> <!-- twitter_api.TwitterUserOperations -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

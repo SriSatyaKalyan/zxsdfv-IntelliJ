@@ -11,4 +11,10 @@ public class TwitterBasics {
 		String baseuri = "https://api.twitter.com/1.1/statuses";
 		return baseuri;
 	}
+	
+	public String twitterBaseURIUser() {
+		String baseuri = "https://api.twitter.com/1.1/followers";
+		return baseuri;
+	}
+	
 }
