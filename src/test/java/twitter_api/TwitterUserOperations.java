@@ -1,27 +1,32 @@
-package jira_api;
+package twitter_api;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
+
+import java.util.Properties;
+
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import resources.ConvertRawFiles;
 
-public class TwitterTweetOperations {
+public class TwitterUserOperations {
 	
-	String consumer_key    = "FMxLzP7TuRKYTKG2nqFvF7kfe";
-	String consumer_secret = "Rwqe6mtXUblZPxR9oMCNsS3iCwNWDJo2GXo7xygQ6yyUdh0czE";
-	String access_token    = "889343834865385472-UwjMBFthHWByqzFyZaof60EyHw5s9Lu";
-	String access_token_secret = "Rh93aPJczniVCdBGZuSPwQE0VCfUE4H7ZIQg2JsVsbFh9";
+	Properties prop = new Properties();
+	
+	String consumer_key    = prop.getProperty("consumer_key");
+	String consumer_secret = prop.getProperty("consumer_secret");
+	String access_token    = prop.getProperty("access_token");
+	String access_token_secret = prop.getProperty("access_token_secret");
 	public String tweet_id;
 	
-	public static Logger log = LogManager.getLogger(JIRACommentOperations.class.getName());
+	public static Logger log = LogManager.getLogger(TwitterUserOperations.class.getName());
 	
 	@Test
 	public void findLatestTweet() {
-		log.info("TwitterTweetOperations.findLatestTweet");
+		log.info("TwitterUserOperations.findLatestTweet");
 		
 		RestAssured.baseURI = "https://api.twitter.com/1.1/statuses";
 		Response response = 
@@ -36,7 +41,7 @@ public class TwitterTweetOperations {
 	
 	@Test
 	public void createTweet() {
-		log.info("TwitterTweetOperations.createTweet");
+		log.info("TwitterUserOperations.createTweet");
 		
 		RestAssured.baseURI = "https://api.twitter.com/1.1/statuses";
 		Response response = 
@@ -50,12 +55,12 @@ public class TwitterTweetOperations {
 		JsonPath json = (ConvertRawFiles.rawtoJSON(response));
 		String created_at = json.getString("created_at");
 		tweet_id   = json.getString("id");
-		System.out.println("The tweet is created at " + created_at);
+		log.info("The tweet is created at " + created_at);
 	}
 	
 	@Test
 	public void removeCreatedTweet() {
-		log.info("TwitterTweetOperations.removeCreatedTweet");
+		log.info("TwitterUserOperations.removeCreatedTweet");
 		
 		RestAssured.baseURI = "https://api.twitter.com/1.1/statuses";
 		Response response = 
@@ -66,12 +71,11 @@ public class TwitterTweetOperations {
 		
 		JsonPath json = (ConvertRawFiles.rawtoJSON(response));
 		String truncated = json.getString("truncated");
-		System.out.println(truncated);
+//		log.info(truncated);
 		if (truncated.equalsIgnoreCase("false")) {
 			Assert.assertTrue(true);
 		}else {
 			Assert.assertFalse(true);
 		}
-
 	}
 }

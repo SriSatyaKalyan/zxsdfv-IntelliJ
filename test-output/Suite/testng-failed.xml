@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+  <test name="TwitterAPI_Tests(failed)">
     <classes>
-      <class name="MavenFramework.Demo3CentralizingData">
+      <class name="twitter_api.TwitterTweetOperations">
         <methods>
+          <include name="createTweet"/>
+          <include name="removeCreatedTweet"/>
           <include name="getData"/>
-          <include name="TestAddandDeletePlace"/>
+          <include name="findLatestTweet"/>
         </methods>
-      </class> <!-- MavenFramework.Demo3CentralizingData -->
-      <class name="MavenFramework.Demo5JIRAapi">
-        <methods>
-          <include name="getData"/>
-        </methods>
-      </class> <!-- MavenFramework.Demo5JIRAapi -->
-      <class name="MavenFramework.Demo6JIRACommenting">
-        <methods>
-          <include name="getData"/>
-        </methods>
-      </class> <!-- MavenFramework.Demo6JIRACommenting -->
+      </class> <!-- twitter_api.TwitterTweetOperations -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TwitterAPI_Tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->

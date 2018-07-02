@@ -4,16 +4,14 @@
 
   <test thread-count="5" name="JIRAAPI_Tests">
     <classes>
-      <!-- <class name="MavenFramework.Twitter1"/> -->
-      <class name="jira_api.JIRACommentOperations"/>
-      <class name="jira_api.JIRAIssueOperations"/>
+<!--      <class name="jira_api.JIRACommentOperations"/> -->
+<!--      <class name="jira_api.JIRAIssueOperations"/> -->
     </classes>
   </test> <!-- Test -->
 	
   <test thread-count="5" name="TwitterAPI_Tests">
     <classes>
-      <!-- <class name="MavenFramework.Twitter1"/> -->
-      <class name="jira_api.TwitterTweetOperations"/>
+      <class name="twitter_api.TwitterTweetOperations"/>
     </classes>
   </test> <!-- Test -->
   

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]">
+  <test name="TwitterAPI_Tests(failed)">
     <classes>
-      <class name="jira_api.JIRA2">
+      <class name="twitter_api.TwitterTweetOperations">
         <methods>
+          <include name="createTweet"/>
+          <include name="removeCreatedTweet"/>
           <include name="getData"/>
-          <include name="e_getComments"/>
-          <include name="g_getComment"/>
-          <include name="h_getComments"/>
+          <include name="findLatestTweet"/>
         </methods>
-      </class> <!-- jira_api.JIRA2 -->
+      </class> <!-- twitter_api.TwitterTweetOperations -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- TwitterAPI_Tests(failed) -->
+</suite> <!-- Failed suite [Suite] -->

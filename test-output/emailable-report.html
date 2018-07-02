@@ -1,37 +1,52 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-<title>TestNG Report</title>
-<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
 </head>
 <body>
-<table>
-<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">JIRAAPI_Tests</a></td><td class="num">14</td><td class="num">0</td><td class="num">0</td><td class="num">6,567</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">TwitterAPI_Tests</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">1,408</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">17</th><th class="num">0</th><th class="num">0</th><th class="num">7,975</th><th colspan="2"></th></tr>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">JIRAAPI_Tests</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">TwitterAPI_Tests</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">3.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">3.8 seconds</td><td colspan="2">&nbsp;</td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">JIRAAPI_Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">jira_api.JIRACommentOperations</td><td><a href="#m0">a_createSession</a></td><td rowspan="1">1530386577707</td><td rowspan="1">2537</td></tr><tr class="passedeven"><td><a href="#m1">b_createSessionIssue</a></td><td rowspan="1">1530386580252</td><td rowspan="1">703</td></tr><tr class="passedeven"><td><a href="#m2">c_addComment1</a></td><td rowspan="1">1530386580962</td><td rowspan="1">333</td></tr><tr class="passedeven"><td><a href="#m3">c_addComment2</a></td><td rowspan="1">1530386581300</td><td rowspan="1">264</td></tr><tr class="passedeven"><td><a href="#m4">c_addComment3</a></td><td rowspan="1">1530386581568</td><td rowspan="1">410</td></tr><tr class="passedeven"><td><a href="#m5">d_updateComment</a></td><td rowspan="1">1530386581983</td><td rowspan="1">490</td></tr><tr class="passedeven"><td><a href="#m6">e_getComments</a></td><td rowspan="1">1530386582474</td><td rowspan="1">81</td></tr><tr class="passedeven"><td><a href="#m7">f_deleteComment2</a></td><td rowspan="1">1530386582564</td><td rowspan="1">282</td></tr><tr class="passedeven"><td><a href="#m8">g_getComment</a></td><td rowspan="1">1530386582850</td><td rowspan="1">64</td></tr><tr class="passedeven"><td><a href="#m9">h_getCommentsAgain</a></td><td rowspan="1">1530386582933</td><td rowspan="1">65</td></tr><tr class="passedodd"><td rowspan="4">jira_api.JIRAIssueOperations</td><td><a href="#m10">a_createSession</a></td><td rowspan="1">1530386583004</td><td rowspan="1">126</td></tr><tr class="passedodd"><td><a href="#m11">b_createSessionIssue</a></td><td rowspan="1">1530386583131</td><td rowspan="1">561</td></tr><tr class="passedodd"><td><a href="#m12">c_addComment</a></td><td rowspan="1">1530386583694</td><td rowspan="1">237</td></tr><tr class="passedodd"><td><a href="#m13">d_updateComment</a></td><td rowspan="1">1530386583932</td><td rowspan="1">289</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">TwitterAPI_Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">jira_api.TwitterTweetOperations</td><td><a href="#m14">createTweet</a></td><td rowspan="1">1530386584300</td><td rowspan="1">780</td></tr><tr class="passedeven"><td><a href="#m15">findLatestTweet</a></td><td rowspan="1">1530386585089</td><td rowspan="1">316</td></tr><tr class="passedeven"><td><a href="#m16">removeCreatedTweet</a></td><td rowspan="1">1530386585411</td><td rowspan="1">292</td></tr></tbody>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">TwitterAPI_Tests &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">twitter_api.TwitterTweetOperations</td><td><a href="#m1"><b>createTweet</b>  </a></td><td class="numi">1</td><td>1530490373235</td><td class="numi">2902</td></tr><tr class="passedodd"><td><a href="#m2"><b>findLatestTweet</b>  </a></td><td class="numi">1</td><td>1530490376137</td><td class="numi">450</td></tr><tr class="passedodd"><td><a href="#m3"><b>removeCreatedTweet</b>  </a></td><td class="numi">1</td><td>1530490376595</td><td class="numi">363</td></tr>
 </table>
-<h2>JIRAAPI_Tests</h2><h3 id="m0">jira_api.JIRACommentOperations#a_createSession</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">jira_api.JIRACommentOperations#b_createSessionIssue</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">jira_api.JIRACommentOperations#c_addComment1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">jira_api.JIRACommentOperations#c_addComment2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">jira_api.JIRACommentOperations#c_addComment3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">jira_api.JIRACommentOperations#d_updateComment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">jira_api.JIRACommentOperations#e_getComments</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">jira_api.JIRACommentOperations#f_deleteComment2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">jira_api.JIRACommentOperations#g_getComment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">jira_api.JIRACommentOperations#h_getCommentsAgain</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">jira_api.JIRAIssueOperations#a_createSession</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">jira_api.JIRAIssueOperations#b_createSessionIssue</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">jira_api.JIRAIssueOperations#c_addComment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">jira_api.JIRAIssueOperations#d_updateComment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>TwitterAPI_Tests</h2><h3 id="m14">jira_api.TwitterTweetOperations#createTweet</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m15">jira_api.TwitterTweetOperations#findLatestTweet</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m16">jira_api.TwitterTweetOperations#removeCreatedTweet</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-</body>
-</html>
+<h1>JIRAAPI_Tests</h1>
+<h1>TwitterAPI_Tests</h1>
+<h2 id="m1">twitter_api.TwitterTweetOperations:createTweet</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">twitter_api.TwitterTweetOperations:findLatestTweet</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">twitter_api.TwitterTweetOperations:removeCreatedTweet</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
