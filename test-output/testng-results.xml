@@ -2,16 +2,16 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-07-02T03:42:29Z" name="Default suite" finished-at="2018-07-02T03:42:31Z" duration-ms="2947">
+  <suite started-at="2018-07-02T06:50:39Z" name="Default suite" finished-at="2018-07-02T06:50:42Z" duration-ms="2914">
     <groups>
     </groups>
-    <test started-at="2018-07-02T03:42:29Z" name="Default test" finished-at="2018-07-02T03:42:31Z" duration-ms="2947">
+    <test started-at="2018-07-02T06:50:39Z" name="Default test" finished-at="2018-07-02T06:50:42Z" duration-ms="2914">
       <class name="twitter_api.TwitterUserOperations">
-        <test-method is-config="true" signature="getData()[pri:0, instance:twitter_api.TwitterUserOperations@1ebd319f]" started-at="2018-07-01T21:42:29Z" name="getData" finished-at="2018-07-01T21:42:29Z" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="getData()[pri:0, instance:twitter_api.TwitterUserOperations@1ebd319f]" started-at="2018-07-02T00:50:39Z" name="getData" finished-at="2018-07-02T00:50:39Z" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getData -->
-        <test-method signature="findFollowersList()[pri:0, instance:twitter_api.TwitterUserOperations@1ebd319f]" started-at="2018-07-01T21:42:29Z" name="findFollowersList" finished-at="2018-07-01T21:42:31Z" duration-ms="2909" status="PASS">
+        <test-method signature="findFollowersList()[pri:0, instance:twitter_api.TwitterUserOperations@1ebd319f]" started-at="2018-07-02T00:50:39Z" name="findFollowersList" finished-at="2018-07-02T00:50:42Z" duration-ms="2888" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findFollowersList -->
