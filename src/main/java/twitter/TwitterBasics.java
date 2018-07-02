@@ -1,7 +1,5 @@
 package twitter;
 
-import io.restassured.path.json.JsonPath;
-
 public class TwitterBasics {
 	
 	public String propertiesFileLocation() {
@@ -14,18 +12,14 @@ public class TwitterBasics {
 		return baseuri;
 	}
 	
-	public String twitterBaseURIUser() {
+	public String twitterFollowersURI() {
 		String baseuri = "https://api.twitter.com/1.1/followers";
 		return baseuri;
 	}
 	
-    /**
-     * Returns the string representation of this JsonPath
-     *
-     * @return path as String
-     */
-    public String getPath(JsonPath path) {
-        return this.path.toString();
-    }
+	public String twitterFriendsURI() {
+		String baseuri = "https://api.twitter.com/1.1/friends";
+		return baseuri;
+	}
 	
 }

@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-07-02T06:50:39Z" name="Default suite" finished-at="2018-07-02T06:50:42Z" duration-ms="2914">
+  <suite started-at="2018-07-02T22:04:21Z" name="Default suite" finished-at="2018-07-02T22:04:24Z" duration-ms="3329">
     <groups>
     </groups>
-    <test started-at="2018-07-02T06:50:39Z" name="Default test" finished-at="2018-07-02T06:50:42Z" duration-ms="2914">
+    <test started-at="2018-07-02T22:04:21Z" name="Default test" finished-at="2018-07-02T22:04:24Z" duration-ms="3329">
       <class name="twitter_api.TwitterUserOperations">
-        <test-method is-config="true" signature="getData()[pri:0, instance:twitter_api.TwitterUserOperations@1ebd319f]" started-at="2018-07-02T00:50:39Z" name="getData" finished-at="2018-07-02T00:50:39Z" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="getData()[pri:0, instance:twitter_api.TwitterUserOperations@15ca7889]" started-at="2018-07-02T16:04:21Z" name="getData" finished-at="2018-07-02T16:04:21Z" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getData -->
-        <test-method signature="findFollowersList()[pri:0, instance:twitter_api.TwitterUserOperations@1ebd319f]" started-at="2018-07-02T00:50:39Z" name="findFollowersList" finished-at="2018-07-02T00:50:42Z" duration-ms="2888" status="PASS">
+        <test-method signature="findFollowersList()[pri:0, instance:twitter_api.TwitterUserOperations@15ca7889]" started-at="2018-07-02T16:04:21Z" name="findFollowersList" finished-at="2018-07-02T16:04:24Z" duration-ms="2886" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findFollowersList -->
+        <test-method signature="findFriendsList()[pri:0, instance:twitter_api.TwitterUserOperations@15ca7889]" started-at="2018-07-02T16:04:24Z" name="findFriendsList" finished-at="2018-07-02T16:04:24Z" duration-ms="427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findFriendsList -->
       </class> <!-- twitter_api.TwitterUserOperations -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
