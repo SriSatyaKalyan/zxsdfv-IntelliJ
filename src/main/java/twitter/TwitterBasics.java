@@ -3,7 +3,7 @@ package twitter;
 public class TwitterBasics {
 	
 	public String propertiesFileLocation() {
-		String location = "C:\\Users\\satya\\Desktop\\Eclipse Workspace\\RESTAssured\\src\\resources\\environment.properties";
+		String location = "C:\\Users\\satya\\Desktop\\Eclipse Workspace\\Framework57\\environment.properties";
 		return location;
 	}
 	

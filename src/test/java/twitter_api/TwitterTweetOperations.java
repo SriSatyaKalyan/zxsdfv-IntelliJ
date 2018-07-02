@@ -18,24 +18,31 @@ import twitter.TwitterBasics;
 
 public class TwitterTweetOperations {
 	
-	Properties prop = new Properties();
+	public Properties prop;
+	public String consumer_key;
+	public String consumer_secret;
+	public String access_token;
+	public String access_token_secret;
 	
-	String consumer_key    = "DjuHXSQqLtx3U9DlocjJWeaaK";//prop.getProperty("consumer_key");
-	String consumer_secret = "aM2ZQ9sLO4LDgimHAKLSsFdD2QE10rjci9dWX5Q5qa8tGJjQri";//prop.getProperty("consumer_secret");
-	String access_token    = "889343834865385472-hGZ2xMEu5YSF1sICdf4VcxSZTzpw5mC";//prop.getProperty("access_token");
-	String access_token_secret = "4Qxyz7gLe0w2pFvJqXszpotEUQeIfQlI6tadkOrmfoHH5";//prop.getProperty("access_token_secret");
 	public String tweet_id;
 	
 	TwitterBasics basics = new TwitterBasics();
 	public static Logger log = LogManager.getLogger(TwitterTweetOperations.class.getName());
 	
-//	@BeforeTest
-//	public void getData() throws IOException {
-//		log.info("TwitterTweetOperations.getData");
-//		prop = new Properties();
-//		FileInputStream fis = new FileInputStream(basics.propertiesFileLocation());
-//		prop.load(fis);
-//	}
+	@BeforeTest
+	public void getData() throws IOException {
+		log.info("TwitterTweetOperations.getData");
+		
+		prop = new Properties();
+		FileInputStream fis = new FileInputStream(basics.propertiesFileLocation());
+		prop.load(fis);
+		
+		consumer_key = prop.getProperty("consumer_key");
+		consumer_secret = prop.getProperty("consumer_secret");
+		access_token    = prop.getProperty("access_token");
+		access_token_secret = prop.getProperty("access_token_secret");
+
+	}
 	
 	@Test
 	public void findLatestTweet() {

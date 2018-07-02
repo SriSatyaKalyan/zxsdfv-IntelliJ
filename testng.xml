@@ -4,8 +4,8 @@
 
   <test thread-count="5" name="JIRAAPI_Tests">
     <classes>
-<!--      <class name="jira_api.JIRACommentOperations"/> -->
-<!--      <class name="jira_api.JIRAIssueOperations"/> -->
+       <class name="jira_api.JIRACommentOperations"/>  
+       <class name="jira_api.JIRAIssueOperations"/> 
     </classes>
   </test> <!-- Test -->
 	

@@ -2,33 +2,51 @@ package twitter_api;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Properties;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import resources.ConvertRawFiles;
+import twitter.TwitterBasics;
 
 public class TwitterUserOperations {
 	
-	Properties prop = new Properties();
-	
-	String consumer_key    = prop.getProperty("consumer_key");
-	String consumer_secret = prop.getProperty("consumer_secret");
-	String access_token    = prop.getProperty("access_token");
-	String access_token_secret = prop.getProperty("access_token_secret");
+	public Properties prop;
+	public String consumer_key;
+	public String consumer_secret;
+	public String access_token;
+	public String access_token_secret;
 	public String tweet_id;
 	
+	TwitterBasics basics = new TwitterBasics();
 	public static Logger log = LogManager.getLogger(TwitterUserOperations.class.getName());
+	
+	@BeforeTest
+	public void getData() throws IOException {
+		log.info("TwitterTweetOperations.getData");
+		
+		prop = new Properties();
+		FileInputStream fis = new FileInputStream(basics.propertiesFileLocation());
+		prop.load(fis);
+		
+		consumer_key = prop.getProperty("consumer_key");
+		consumer_secret = prop.getProperty("consumer_secret");
+		access_token    = prop.getProperty("access_token");
+		access_token_secret = prop.getProperty("access_token_secret");
+	}
 	
 	@Test
 	public void findLatestTweet() {
 		log.info("TwitterUserOperations.findLatestTweet");
 		
-		RestAssured.baseURI = "https://api.twitter.com/1.1/statuses";
+		RestAssured.baseURI =  basics.twitterBaseURI();
 		Response response = 
 		given().auth().oauth(consumer_key, consumer_secret, access_token, access_token_secret).
 		queryParam("count", "1").when().
@@ -41,9 +59,9 @@ public class TwitterUserOperations {
 	
 	@Test
 	public void createTweet() {
-		log.info("TwitterUserOperations.createTweet");
+		log.info("TwitterTweetOperations.createTweet");
 		
-		RestAssured.baseURI = "https://api.twitter.com/1.1/statuses";
+		RestAssured.baseURI = basics.twitterBaseURI();
 		Response response = 
 		given().auth().oauth(consumer_key, consumer_secret, access_token, access_token_secret).
 		//Keep on changing the tweet text as API does not allow the same tweet to be posted on and on forever
@@ -60,9 +78,9 @@ public class TwitterUserOperations {
 	
 	@Test
 	public void removeCreatedTweet() {
-		log.info("TwitterUserOperations.removeCreatedTweet");
+		log.info("TwitterTweetOperations.removeCreatedTweet");
 		
-		RestAssured.baseURI = "https://api.twitter.com/1.1/statuses";
+		RestAssured.baseURI = basics.twitterBaseURI();
 		Response response = 
 		given().auth().oauth(consumer_key, consumer_secret, access_token, access_token_secret).
 		when().post("/destroy/" + tweet_id +".json").

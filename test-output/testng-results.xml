@@ -1,23 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="3" failed="0" skipped="0">
+<testng-results total="17" passed="17" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-07-02T00:12:53Z" name="Suite" finished-at="2018-07-02T00:12:56Z" duration-ms="3817">
+  <suite started-at="2018-07-02T02:49:18Z" name="Suite" finished-at="2018-07-02T02:49:38Z" duration-ms="20200">
     <groups>
     </groups>
-    <test started-at="2018-07-02T00:12:53Z" name="JIRAAPI_Tests" finished-at="2018-07-02T00:12:53Z" duration-ms="0">
+    <test started-at="2018-07-02T02:49:18Z" name="JIRAAPI_Tests" finished-at="2018-07-02T02:49:37Z" duration-ms="18657">
+      <class name="jira_api.JIRAIssueOperations">
+        <test-method signature="a_createSession()[pri:0, instance:jira_api.JIRAIssueOperations@548e6d58]" started-at="2018-07-01T20:49:36Z" name="a_createSession" finished-at="2018-07-01T20:49:36Z" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a_createSession -->
+        <test-method signature="b_createSessionIssue()[pri:0, instance:jira_api.JIRAIssueOperations@548e6d58]" started-at="2018-07-01T20:49:36Z" name="b_createSessionIssue" finished-at="2018-07-01T20:49:36Z" duration-ms="359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b_createSessionIssue -->
+        <test-method signature="c_addComment()[pri:0, instance:jira_api.JIRAIssueOperations@548e6d58]" started-at="2018-07-01T20:49:36Z" name="c_addComment" finished-at="2018-07-01T20:49:36Z" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c_addComment -->
+        <test-method signature="d_updateComment()[pri:0, instance:jira_api.JIRAIssueOperations@548e6d58]" started-at="2018-07-01T20:49:36Z" name="d_updateComment" finished-at="2018-07-01T20:49:37Z" duration-ms="216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- d_updateComment -->
+      </class> <!-- jira_api.JIRAIssueOperations -->
+      <class name="jira_api.JIRACommentOperations">
+        <test-method is-config="true" signature="getData()[pri:0, instance:jira_api.JIRACommentOperations@3571b748]" started-at="2018-07-01T20:49:18Z" name="getData" finished-at="2018-07-01T20:49:18Z" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method is-config="true" signature="getData()[pri:0, instance:jira_api.JIRAIssueOperations@548e6d58]" started-at="2018-07-01T20:49:18Z" name="getData" finished-at="2018-07-01T20:49:18Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method signature="a_createSession()[pri:0, instance:jira_api.JIRACommentOperations@3571b748]" started-at="2018-07-01T20:49:18Z" name="a_createSession" finished-at="2018-07-01T20:49:20Z" duration-ms="2305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a_createSession -->
+        <test-method signature="b_createSessionIssue()[pri:0, instance:jira_api.JIRACommentOperations@3571b748]" started-at="2018-07-01T20:49:20Z" name="b_createSessionIssue" finished-at="2018-07-01T20:49:34Z" duration-ms="13950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b_createSessionIssue -->
+        <test-method signature="c_addComment1()[pri:0, instance:jira_api.JIRACommentOperations@3571b748]" started-at="2018-07-01T20:49:34Z" name="c_addComment1" finished-at="2018-07-01T20:49:34Z" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c_addComment1 -->
+        <test-method signature="c_addComment2()[pri:0, instance:jira_api.JIRACommentOperations@3571b748]" started-at="2018-07-01T20:49:34Z" name="c_addComment2" finished-at="2018-07-01T20:49:35Z" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c_addComment2 -->
+        <test-method signature="c_addComment3()[pri:0, instance:jira_api.JIRACommentOperations@3571b748]" started-at="2018-07-01T20:49:35Z" name="c_addComment3" finished-at="2018-07-01T20:49:35Z" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c_addComment3 -->
+        <test-method signature="d_updateComment()[pri:0, instance:jira_api.JIRACommentOperations@3571b748]" started-at="2018-07-01T20:49:35Z" name="d_updateComment" finished-at="2018-07-01T20:49:35Z" duration-ms="443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- d_updateComment -->
+        <test-method signature="e_getComments()[pri:0, instance:jira_api.JIRACommentOperations@3571b748]" started-at="2018-07-01T20:49:35Z" name="e_getComments" finished-at="2018-07-01T20:49:35Z" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- e_getComments -->
+        <test-method signature="f_deleteComment2()[pri:0, instance:jira_api.JIRACommentOperations@3571b748]" started-at="2018-07-01T20:49:35Z" name="f_deleteComment2" finished-at="2018-07-01T20:49:36Z" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f_deleteComment2 -->
+        <test-method signature="g_getComment()[pri:0, instance:jira_api.JIRACommentOperations@3571b748]" started-at="2018-07-01T20:49:36Z" name="g_getComment" finished-at="2018-07-01T20:49:36Z" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- g_getComment -->
+        <test-method signature="h_getCommentsAgain()[pri:0, instance:jira_api.JIRACommentOperations@3571b748]" started-at="2018-07-01T20:49:36Z" name="h_getCommentsAgain" finished-at="2018-07-01T20:49:36Z" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- h_getCommentsAgain -->
+      </class> <!-- jira_api.JIRACommentOperations -->
     </test> <!-- JIRAAPI_Tests -->
-    <test started-at="2018-07-02T00:12:53Z" name="TwitterAPI_Tests" finished-at="2018-07-02T00:12:56Z" duration-ms="3723">
+    <test started-at="2018-07-02T02:49:37Z" name="TwitterAPI_Tests" finished-at="2018-07-02T02:49:38Z" duration-ms="1445">
       <class name="twitter_api.TwitterTweetOperations">
-        <test-method signature="createTweet()[pri:0, instance:twitter_api.TwitterTweetOperations@7c83dc97]" started-at="2018-07-01T18:12:53Z" name="createTweet" finished-at="2018-07-01T18:12:56Z" duration-ms="2902" status="PASS">
+        <test-method is-config="true" signature="getData()[pri:0, instance:twitter_api.TwitterTweetOperations@c03cf28]" started-at="2018-07-01T20:49:37Z" name="getData" finished-at="2018-07-01T20:49:37Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method signature="createTweet()[pri:0, instance:twitter_api.TwitterTweetOperations@c03cf28]" started-at="2018-07-01T20:49:37Z" name="createTweet" finished-at="2018-07-01T20:49:37Z" duration-ms="626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTweet -->
-        <test-method signature="findLatestTweet()[pri:0, instance:twitter_api.TwitterTweetOperations@7c83dc97]" started-at="2018-07-01T18:12:56Z" name="findLatestTweet" finished-at="2018-07-01T18:12:56Z" duration-ms="450" status="PASS">
+        <test-method signature="findLatestTweet()[pri:0, instance:twitter_api.TwitterTweetOperations@c03cf28]" started-at="2018-07-01T20:49:37Z" name="findLatestTweet" finished-at="2018-07-01T20:49:38Z" duration-ms="403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findLatestTweet -->
-        <test-method signature="removeCreatedTweet()[pri:0, instance:twitter_api.TwitterTweetOperations@7c83dc97]" started-at="2018-07-01T18:12:56Z" name="removeCreatedTweet" finished-at="2018-07-01T18:12:56Z" duration-ms="363" status="PASS">
+        <test-method signature="removeCreatedTweet()[pri:0, instance:twitter_api.TwitterTweetOperations@c03cf28]" started-at="2018-07-01T20:49:38Z" name="removeCreatedTweet" finished-at="2018-07-01T20:49:38Z" duration-ms="381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeCreatedTweet -->

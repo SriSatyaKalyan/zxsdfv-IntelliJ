@@ -42,6 +42,7 @@ public class JIRACommentOperations {
 	@BeforeTest
 	public void getData() throws IOException {
 		log.info("JIRACommentOperations.getData");
+		
 		prop = new Properties();
 		FileInputStream fis = new FileInputStream(basics.propertiesFileLocation());
 		prop.load(fis);
@@ -93,7 +94,7 @@ public class JIRACommentOperations {
 	public void c_addComment1() {
 		log.info("JIRACommentOperations.addComment1");
 		
-		RestAssured.baseURI=prop.getProperty("APIHost");
+		RestAssured.baseURI= prop.getProperty("APIHost");
 		Response response3 = 
 			given().header("Cookie", "JSESSIONID=" + sessionvalue).
 			header("Content-Type",basics.jsonApplicationType()).
