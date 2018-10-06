@@ -2,10 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
+  <!--Because these tests require valid authentication and I do not have one at this point,
+      I am sticking to ignoring this particular test set and continue ahead with building
+      other tests which do not have expiring credentials -->
   <test thread-count="5" name="JIRAAPI_Tests">
     <classes>
-        <class name="jira_api.JIRACommentOperations"/>   
-        <class name="jira_api.JIRAIssueOperations"/> 
+        <!--<class name="jira_api.JIRACommentOperations"/>   -->
+        <!--<class name="jira_api.JIRAIssueOperations"/> -->
     </classes>
   </test> <!-- Test -->
 	
